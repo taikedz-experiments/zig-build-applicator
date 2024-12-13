@@ -4,3 +4,6 @@ zig-out/
 
 ./addzb
 *.o
+
+*.pyc
+
