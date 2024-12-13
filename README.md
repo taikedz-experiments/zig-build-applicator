@@ -44,6 +44,7 @@ pub fn build(b:*std.Build) void {
     });
 
     // Information taken from the .aliases section
+    // Allows the project to do `@import("zg_CaseData")`
     const dep__zg = b.dependency("zg", .{});
     exe.root_module.addImport("zg_CaseData", dep__zg.module("CaseData"));
 
